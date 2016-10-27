@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"github.com/Sirupsen/logrus"
+	"github.com/nathany/gvt-sample/web"
+)
 
 func main() {
 	// TODO(ny): do something awesome here
-	fmt.Println("hello, universe")
+	logrus.Info("hello, universe")
+	web.Start(":8080")
 }
